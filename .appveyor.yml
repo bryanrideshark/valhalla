@@ -28,8 +28,26 @@ clone_depth: 1
 
 artifacts:
   # pushing a single file
-  - path: **\*.(cp|exe|sh|py|js|csv|sql)
-    name: Everything
+  - path: bin
+    name: bin
+
+  - path: scripts
+    name: scripts
+
+  - path: valhalla
+    name: valhalla
+
+  - path: third_party
+    name: third_party
+
+  - path: lua
+    name: lua
+
+  - path: src
+    name: src
+
+  - path: lib
+    name: lib
 
 install:
   - ps: 'Write-Host "Fix symlinks to third-party .proto files" -ForegroundColor Magenta'
