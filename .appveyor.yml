@@ -26,6 +26,15 @@ cache:
 
 clone_depth: 1
 
+artifacts:
+  # pushing a single file
+  - path: **\*
+    name: Everything
+
+  # pushing a single file with environment variable in path and "Deployment name" specified
+  - path: **\*.exe
+    name: Exes
+
 install:
   - ps: 'Write-Host "Fix symlinks to third-party .proto files" -ForegroundColor Magenta'
   - cmd: |
