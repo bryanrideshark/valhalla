@@ -28,9 +28,44 @@ clone_depth: 1
 
 artifacts:
   # pushing a single file
-  - path: '**\*'
-    name: everything
-    type: zip
+  - path: build
+    name: build
+
+  - path: cmake
+    name: cmake
+
+  - path: date_time
+    name: date_time
+
+  - path: docs
+    name: docs
+
+  - path: locales
+    name: locales
+
+  - path: run_routes_scripts
+    name: run_routes_scripts
+
+  - path: scripts
+    name: scripts
+
+  - path: proto
+    name: proto
+
+  - path: src
+    name: src
+
+  - path: test
+    name: test
+
+  - path: test_requests
+    name: test_requests
+
+  - path: third_party
+    name: third_party
+
+  - path: valhalla
+    name: valhalla
 
 install:
   - ps: 'Write-Host "Fix symlinks to third-party .proto files" -ForegroundColor Magenta'
