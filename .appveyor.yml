@@ -28,7 +28,7 @@ clone_depth: 1
 
 artifacts:
   # pushing a single file
-  - path: **\*
+  - path: **\*.*
     name: Everything
 
   # pushing a single file with environment variable in path and "Deployment name" specified
